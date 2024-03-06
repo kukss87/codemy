@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Hello </h1>
+        <p>First page of {{ name }}</p>
+
+            <ul>
+            {% for item in pizzas %}
+                {% if item == 42 %}
+                    <li>{{ item|string * 2 }}
+                {% else %}
+                    <li> {{ item }}
+                {% endif %}
+            {% endfor %}
+            </ul>
+
+
+</body>
+</html>
